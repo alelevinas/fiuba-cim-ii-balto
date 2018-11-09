@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/btn_linkup_plus"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:elevation="15dp"
+        android:orientation="vertical">
+
+        <!-- <android.support.v7.widget.CardView
+             android:id="@+id/card_view_linkup_plus"
+             android:layout_width="fill_parent"
+             android:layout_height="70dp"
+             android:layout_gravity="center"
+             android:layout_margin="10dp"
+             android:elevation="24dp"
+             app:cardCornerRadius="20dp"
+             app:cardElevation="1dp"
+             app:contentPadding="5dp">
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <Button
+                     android:id="@+id/txt_linkup_plus"
+                     style="@style/Widget.AppCompat.Button.Borderless"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:elevation="3dp"
+                     android:gravity="center_vertical|center_horizontal"
+                     android:text="¡Obtener LinkUp premium!"
+                     android:textColor="?android:attr/textColorLink"
+                     android:textColorLink="@color/colorAccent"
+                     android:textSize="22sp" />
+
+             </RelativeLayout>
+         </android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_interests"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sobre tu mascota"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/switch_men"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:checked="true"
+                    android:text="Hombres"
+                    android:textSize="30sp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/switch_women"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:checked="true"
+                    android:text="Mujeres"
+                    android:textSize="30sp" >
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Edad" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:id="@+id/txt_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rango de Peso ideal"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                    android:id="@+id/seekbar_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_distance"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:bar_color="#F7BB88"
+                    app:bar_highlight_color="#E07416"
+                    app:corner_radius="10"
+                    app:data_type="_integer"
+                    app:gap="5"
+                    app:left_thumb_color="@color/colorAccent"
+                    app:left_thumb_color_pressed="@color/colorAccent"
+                    app:max_value="100"
+                    app:min_value="0"
+                    app:steps="1" />
+
+                <!--                    <TextView
+                                        android:id="@+id/textMinDistance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:layout_below="@id/seekbar_distance"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginStart="10dp"
+                                        android:textSize="16dp"
+                                        android:textColor="#000"/>-->
+
+                <TextView
+                    android:id="@+id/textMaxDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seekbar_distance"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="100"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <!--<org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:id="@+id/seekbar_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:absoluteMaxValue="500"
+                    app:absoluteMinValue="5"
+                    app:activateOnDefaultValues="true"
+                    app:activeColor="@color/colorAccent"
+                    app:barHeight="2dp"
+                    app:showLabels="false"
+                    app:singleThumb="true"
+                    app:textAboveThumbsColor="#000000"
+                    app:thumbDisabled="@drawable/custom_slider_thumb"
+                    app:thumbNormal="@drawable/custom_slider_thumb"
+                    app:thumbPressed="@drawable/custom_slider_thumb"
+                    app:thumbShadow="true"
+                    app:thumbShadowColor="@color/colorAccent"
+                    app:valuesAboveThumbs="true" />-->
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_age_range"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/txt_age_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rango de Líquido consumido ideal"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/rgseekbar_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_age_range"
+                    app:bar_color="#F7BB88"
+                    app:bar_highlight_color="#E07416"
+                    app:corner_radius="10"
+                    app:data_type="_integer"
+                    app:gap="5"
+                    app:left_thumb_color="@color/colorAccent"
+                    app:left_thumb_color_pressed="@color/colorAccent"
+                    app:max_value="100"
+                    app:min_value="18"
+                    app:right_thumb_color="@color/colorAccent"
+                    app:right_thumb_color_pressed="@color/colorAccent"
+                    app:steps="1" />
+
+                <TextView
+                    android:id="@+id/textMinAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rgseekbar_age"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textMaxAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rgseekbar_age"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <!--<org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:id="@+id/rgseekbar_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:absoluteMaxValue="99"
+                    app:absoluteMinValue="18"
+                    app:activateOnDefaultValues="true"
+                    app:activeColor="@color/colorAccent"
+                    app:barHeight="2dp"
+                    app:showLabels="false"
+                    app:textAboveThumbsColor="#000000"
+                    app:thumbDisabled="@drawable/custom_slider_thumb"
+                    app:thumbNormal="@drawable/custom_slider_thumb"
+                    app:thumbPressed="@drawable/custom_slider_thumb"
+                    app:thumbShadow="true"
+                    app:thumbShadowColor="@color/colorAccent"
+                    app:valuesAboveThumbs="true" />-->
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_distance2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="5dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+
+                <TextView
+                    android:id="@+id/txt_distance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rango de Temperatura ideal"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                    android:id="@+id/seekbar_distance2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_distance2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:bar_color="#F7BB88"
+                    app:bar_highlight_color="#E07416"
+                    app:corner_radius="10"
+                    app:data_type="_integer"
+                    app:gap="5"
+                    app:left_thumb_color="@color/colorAccent"
+                    app:left_thumb_color_pressed="@color/colorAccent"
+                    app:max_value="100"
+                    app:min_value="0"
+                    app:steps="1" />
+
+                <TextView
+                    android:id="@+id/textMaxDistance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seekbar_distance"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="100"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch_invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Notificaciones"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_friendship_relation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_friendship_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notificarme cuando"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/switch_invisible1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Está fuera del rango de peso"
+                    android:textSize="12sp" />
+
+                <Switch
+                    android:id="@+id/switch_invisible2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Queda poco líquido"
+                    android:textSize="12sp" />
+
+                <Switch
+                    android:id="@+id/switch_invisible3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Queda poca comida"
+                    android:textSize="12sp" />
+
+                <Switch
+                    android:id="@+id/switch_invisible4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Temperatura fuera de rango"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:elevation="24dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:contentPadding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <Button
+                    android:id="@+id/button_delete"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Resetear a los valores predeterminados"
+                    android:textColor="#FFFFFF"
+                    android:textColorLink="@color/colorAccent"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

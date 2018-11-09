@@ -1,0 +1,65 @@
+<resources>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notificaciones</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_name">Balto</string>
+    <string name="facebook_app_id">271461820013664</string>
+    <string name="fb_login_protocol_scheme">fb271461820013664</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_link_up">Link Up!</string>
+    <string name="discover">Descubrir</string>
+    <string name="title_messages">Mensajes</string>
+    <string name="title_discover">Descubrir</string>
+    <string name="title_profile">Perfil</string>
+    <string name="login_title">Link Up!</string>
+    <string name="login_subtitle">¡Comienza Ya!</string>
+    <string name="title_activity_first_sign_up">Tu Perfil</string>
+
+    <string name="item_title">Palais Garnier</string>
+    <string name="item_desc">The Palais Garnier which locates in Paris was built from 1861 for
+        the Paris Opera.
+    </string>
+    <string name="button_edit_info">Editar Información</string>
+    <string name="profile_picture">profile picture</string>
+    <string name="title_facebookphoto_list">Facebook Albums</string>
+    <string name="title_facebookphoto_detail">Album\'s photos</string>
+    <string name="preferencias">button_preferences</string>
+    <string name="intereses">title_interests</string>
+    <string name="title_interests">Intereses</string>
+    <string name="button_preferences">Preferencias</string>
+    <string name="years">años</string>
+    <string name="ok">Entendido</string>
+    <string name="image_for_profile">profile_extra_image_description</string>
+    <string name="title_edit_info">Edita tu perfil</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="fragment_newmatch_title_matches">Conexiones</string>
+    <string name="fragment_newmatch_title_chats">Chats</string>
+    <string name="fragment_newmatch_no_chats">Todavía no hay chats!</string>
+    <string name="fragment_explore_empty">No hay nadie cerca que matchee con tus preferencias</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="title_view_profile">Ver perfil</string>
+    <string name="title_block">Bloquear</string>
+    <string name="title_report">Denunciar</string>
+    <string name="dialog_hint">Insulta</string>
+    <string name="dialog_input_title">Describa la razón de la denuncia</string>
+    <string name="send">Enviar</string>
+    <string name="yes">Si</string>
+    <string name="cancel">cancelar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="blocked_by_admin_msg">El usuario con quien intentas comunicarte ha sido bloqueado por el administrador</string>
+    <string name="blocked_conv_msg">Esta conversación ha sido bloqueada</string>
+    <string name="title_activity_premium_details">PremiumDetailsActivity</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="title_status">Estado en vivo</string>
+    <string name="title_reports">Reportes</string>
+    <string name="title_configuration">Configuración</string>
+
+</resources>

@@ -1,0 +1,9 @@
+apply plugin: 'com.android.instantapp'
+
+dependencies {
+    implementation project(':featureInstantApp')
+    implementation project(':base')
+}
+repositories {
+    mavenCentral()
+}

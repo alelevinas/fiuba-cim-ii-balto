@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 
-public class MainActivity extends AppCompatActivity implements ReportFragment.OnFragmentInteractionListener, ReportsMenuFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, StatusFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements NotificationsFragment.OnFragmentInteractionListener, ReportFragment.OnFragmentInteractionListener, ReportsMenuFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, StatusFragment.OnFragmentInteractionListener {
 
     private ActionBar toolbar;
 
@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity implements ReportFragment.On
                 loadFragment(fragment);
                 return true;
             } else if (id == R.id.navigation_notifications) {
-                //mTextMessage.setText(R.string.title_notifications);
+                toolbar.setTitle("Notificaciones");
+                fragment = new NotificationsFragment();
+                loadFragment(fragment);
                 return true;
             }
             return false;

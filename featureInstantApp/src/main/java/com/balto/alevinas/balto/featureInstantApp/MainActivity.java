@@ -9,9 +9,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 
-public class MainActivity extends AppCompatActivity implements SettingsFragment.OnFragmentInteractionListener, StatusFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements ReportFragment.OnFragmentInteractionListener, ReportsMenuFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, StatusFragment.OnFragmentInteractionListener {
 
     private ActionBar toolbar;
 
@@ -28,7 +30,9 @@ public class MainActivity extends AppCompatActivity implements SettingsFragment.
                 loadFragment(fragment);
                 return true;
             } else if (id == R.id.navigation_dashboard) {
-                //mTextMessage.setText(R.string.title_dashboard);
+                toolbar.setTitle("Reportes");
+                fragment = new ReportsMenuFragment();
+                loadFragment(fragment);
                 return true;
             } else if (id == R.id.navigation_configuration) {
                 toolbar.setTitle("Configuración");
@@ -43,6 +47,13 @@ public class MainActivity extends AppCompatActivity implements SettingsFragment.
         }
     };
 
+
+    /** Called when the user taps the Send button */
+    public void sendMessage(View view) {
+        Fragment fragment = new ReportFragment();
+        loadFragment(fragment);
+    }
+
     private void loadFragment(Fragment fragment) {
         // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -50,6 +61,22 @@ public class MainActivity extends AppCompatActivity implements SettingsFragment.
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
+    public void loadWaterReport(View view) {
+        ImageView iv = findViewById(R.id.reportImageView);
+        iv.setImageResource(R.drawable.rep_agua);
+    }
+
+    public void loadFoodReport(View view) {
+        ImageView iv = findViewById(R.id.reportImageView);
+        iv.setImageResource(R.drawable.rep_comida);
+    }
+
+    public void loadTempReport(View view) {
+        ImageView iv = findViewById(R.id.reportImageView);
+        iv.setImageResource(R.drawable.rep_temp);
+    }
+
 
 
     @Override

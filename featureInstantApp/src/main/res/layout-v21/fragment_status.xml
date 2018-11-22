@@ -305,6 +305,16 @@
             android:text='Estado del ambiente "Living"'
             android:textAppearance="@android:style/TextAppearance.Material.Title" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
         <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/temperature_card_view"
@@ -345,7 +355,52 @@
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
 
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map_card_view"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="loadMap"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/map_view"
+                    android:layout_width="116dp"
+                    android:layout_height="103dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/map_icon_v2" />
+
+                <TextView
+                    android:id="@+id/map_data"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_below="@+id/map_view"
+                    android:layout_marginTop="-11dp"
+                    android:layout_centerHorizontal="true"
+
+                    android:text="Ubicación"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="32sp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/living" />
+
+    <ImageView
+        android:id="@+id/lucky"
+        android:layout_width="70dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/perro1"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="43dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="101dp"
+        android:src="@drawable/agua1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="239dp"
+        android:src="@drawable/alimento1" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/peso3" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-21dp"
+        android:layout_marginEnd="22dp"
+        android:src="@drawable/juegos2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="70dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="123dp"
+        android:src="@drawable/temperatura1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView12"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginBottom="77dp"
+
+        android:text="23ºC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp" />/>
+
+</RelativeLayout>

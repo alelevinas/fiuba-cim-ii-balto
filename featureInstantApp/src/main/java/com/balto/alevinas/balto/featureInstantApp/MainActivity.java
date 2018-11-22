@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 
-public class MainActivity extends AppCompatActivity implements NotificationsFragment.OnFragmentInteractionListener, ReportFragment.OnFragmentInteractionListener, ReportsMenuFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, StatusFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements MapFragment.OnFragmentInteractionListener, NotificationsFragment.OnFragmentInteractionListener, ReportFragment.OnFragmentInteractionListener, ReportsMenuFragment.OnFragmentInteractionListener, SettingsFragment.OnFragmentInteractionListener, StatusFragment.OnFragmentInteractionListener {
 
     private ActionBar toolbar;
 
@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity implements NotificationsFrag
         iv.setImageResource(R.drawable.rep_temp);
     }
 
+    public void loadMap(View view) {
+        Fragment fragment = new MapFragment();
+        loadFragment(fragment);
+    }
 
 
     @Override
